@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Leafmap</title>
+<title>My Awesome Map</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css"/>
@@ -26,7 +26,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [0, 20], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 2, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addLayer", [{"id": "Google Hybrid", "type": "raster", "source": {"attribution": "Google", "maxzoom": 30, "minzoom": 0, "tileSize": 256, "tiles": ["https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}&key=AIzaSyCgAHrR2oanV6orgySpu-b0Sd9uSCm8jO4"], "type": "raster"}}, null]], ["setPaintProperty", ["Google Hybrid", "raster-opacity", 1.0]], ["setLayoutProperty", ["Google Hybrid", "visibility", "none"]], ["addSource", ["example_source", {"type": "vector", "url": "pmtiles://https://data.source.coop/vida/google-microsoft-open-buildings/pmtiles/go_ms_building_footprints.pmtiles", "attribution": "PMTiles"}]], ["addLayer", [{"id": "buildings", "type": "fill", "paint": {"fill-color": "#3388ff", "fill-opacity": 0.5}, "source": "example_source", "source-layer": "building_footprints"}, null]], ["setLayoutProperty", ["buildings", "visibility", "visible"]], ["setPaintProperty", ["buildings", "fill-opacity", 1.0]], ["addTooltip", ["buildings", null, null]], ["fitBounds", [[[-160.221701, -55.9756776], [166.709685, 74.7731168]]]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [0, 20], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 2, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addLayer", [{"id": "Google Hybrid", "type": "raster", "source": {"attribution": "Google", "maxzoom": 30, "minzoom": 0, "tileSize": 256, "tiles": ["https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}&key=YOUR-API-KEY"], "type": "raster"}}, null]], ["setPaintProperty", ["Google Hybrid", "raster-opacity", 1.0]], ["setLayoutProperty", ["Google Hybrid", "visibility", "none"]], ["addSource", ["example_source", {"type": "vector", "url": "pmtiles://https://data.source.coop/vida/google-microsoft-open-buildings/pmtiles/go_ms_building_footprints.pmtiles", "attribution": "PMTiles"}]], ["addLayer", [{"id": "buildings", "type": "fill", "paint": {"fill-color": "#3388ff", "fill-opacity": 0.5}, "source": "example_source", "source-layer": "building_footprints"}, null]], ["setLayoutProperty", ["buildings", "visibility", "visible"]], ["setPaintProperty", ["buildings", "fill-opacity", 1.0]], ["addTooltip", ["buildings", null, null]], ["fitBounds", [[[-160.221701, -55.9756776], [166.709685, 74.7731168]]]], ["addControl", ["LayerSwitcherControl", {"layerIds": ["Google Hybrid", "buildings"], "theme": "default", "cssText": "padding: 5px; border: 1px solid darkgrey; border-radius: 4px;"}, "top-left"]]]};
     pymaplibregl(data);
 })();
 </script>
