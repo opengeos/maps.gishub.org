@@ -26,7 +26,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-88.137343, 35.137451], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 4, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["urban-areas", {"type": "geojson", "data": "https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson"}]], ["addLayer", [{"id": "urban-areas-fill", "type": "fill", "layout": {}, "paint": {"fill-color": "#f08", "fill-opacity": 0.4}, "source": "urban-areas"}, "water_name_line"]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [-88.137343, 35.137451], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 4, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["urban-areas", {"type": "geojson", "data": "https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson"}]], ["addLayer", [{"id": "urban-areas-fill", "type": "fill", "layout": {}, "paint": {"fill-color": "#f08", "fill-opacity": 0.4}, "source": "urban-areas"}, "waterway_label"]]]};
     pymaplibregl(data);
 })();
 </script>
