@@ -26,7 +26,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-100, 40], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 3, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["InfoBoxControl", {"content": "Awesome Text!", "cssText": "font-size: 25px; color: black;\n        font-weight: normal; padding: 5px;\n        background-color: rgba(255, 255, 255, 0.8); border-radius: 5px;"}, "top-left"]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [-100, 40], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 3, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["InfoBoxControl", {"content": "Awesome Text!", "cssText": "font-size: 25px; color: black;\n        font-weight: normal; padding: 5px;\n        background-color: rgba(255, 255, 255, 0.8); border-radius: 5px;"}, "top-left"]]]};
     pymaplibregl(data);
 })();
 </script>
