@@ -14,6 +14,19 @@ leafmap.execute_maplibre_notebook_dir(in_dir, out_dir, replace_api_key=True)
 shutil.rmtree("leafmap-master")
 os.remove("leafmap-master.zip")
 
+in_dir = "demos"
+out_dir = "demos-html"
+shutil.copytree(in_dir, out_dir)
+leafmap.execute_maplibre_notebook_dir(
+    in_dir, out_dir, keep_notebook=True, replace_api_key=True
+)
+
+html_files = leafmap.find_files(out_dir, "*.html")
+for file in html_files:
+    shutil.copyfile(file, os.path.join("demos", os.path.basename(file)))
+
+shutil.rmtree(out_dir)
+
 leafmap.generate_index_html("demos")
 
 
