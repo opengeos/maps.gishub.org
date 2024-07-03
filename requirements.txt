@@ -1,1 +1,1 @@
-leafmap["maplibre"]
+leafmap[maplibre]
