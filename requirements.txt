@@ -1,1 +1,2 @@
+jupyterlab
 leafmap[maplibre]
