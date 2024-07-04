@@ -26,7 +26,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-122.447303, 37.753574], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 13, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["contours", {"type": "vector", "url": "https://api.maptiler.com/tiles/contours/tiles.json?key=zHkOvEKXRU94s1PSxs7w"}]], ["addLayer", [{"id": "terrain-data", "type": "line", "layout": {"line-join": "round", "line-cap": "round"}, "paint": {"line-color": "#ff69b4", "line-width": 1}, "source": "contours", "source-layer": "contour"}, null]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [-122.447303, 37.753574], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 13, "height": "600px"}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["contours", {"type": "vector", "url": "https://api.maptiler.com/tiles/contours/tiles.json?key=YOUR-API-KEY-PUBLIC"}]], ["addLayer", [{"id": "terrain-data", "type": "line", "layout": {"line-join": "round", "line-cap": "round"}, "paint": {"line-color": "#ff69b4", "line-width": 1}, "source": "contours", "source-layer": "contour"}, null]]]};
     pymaplibregl(data);
 })();
 </script>
