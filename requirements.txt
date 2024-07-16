@@ -1,5 +1,3 @@
-geopandas
 jupyterlab
 leafmap>=0.35.7
 leafmap[maplibre]
-mapclassify
