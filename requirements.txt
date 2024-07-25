@@ -1,5 +1,5 @@
 geopandas
+git+https://github.com/opengeos/leafmap.git
 jupyterlab
-leafmap>=0.35.7
 leafmap[maplibre]
 mapclassify
