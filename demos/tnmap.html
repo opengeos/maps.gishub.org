@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
+
         <script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
         </script>
-    
+
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
+
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
@@ -34,7 +34,7 @@
                 }
                 .leaflet-container { font-size: 1rem; }
             </style>
-        
+
     <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
@@ -45,14 +45,14 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
 </head>
 <body>
-    
-    
+
+
             <div class="folium-map" id="map_e502cbbe4046e51ce121a3bc52ebe413" ></div>
-        
+
 </body>
 <script>
-    
-    
+
+
             var map_e502cbbe4046e51ce121a3bc52ebe413 = L.map(
                 "map_e502cbbe4046e51ce121a3bc52ebe413",
                 {
@@ -67,24 +67,24 @@
             );
             L.control.scale().addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
 
-            
 
-        
-    
+
+
+
             var tile_layer_18bc9c722d73ede14a68b49450e95c8d = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 24, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-        
-    
+
+
             tile_layer_18bc9c722d73ede14a68b49450e95c8d.addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
-        
-    
+
+
             L.control.fullscreen(
                 {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
             ).addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
-        
-    
+
+
             var options = {
               position: "topleft",
               draw: {},
@@ -111,9 +111,9 @@
             map_e502cbbe4046e51ce121a3bc52ebe413.on('draw:created', function(e) {
                 drawnItems_draw_control_6b12e0f0364d83644a4b6d7cf43e245e.addLayer(e.layer);
             });
-            
-        
-    
+
+
+
             var measure_control_c35ceee6c9a5ba595acc1e19770c27d2 = new L.Control.Measure(
                 {"position": "bottomleft", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "meters", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
             map_e502cbbe4046e51ce121a3bc52ebe413.addControl(measure_control_c35ceee6c9a5ba595acc1e19770c27d2);
@@ -133,8 +133,8 @@
                 },
             });
 
-        
-    
+
+
 
             var geocoderOpts_geocoder_fd0dcde6adbcd1ebdc7c955be05dec91 = {"collapsed": true, "defaultMarkGeocode": true, "position": "topleft", "provider": "nominatim", "providerOptions": {}, "zoom": 11};
 
@@ -153,23 +153,23 @@
                 map_e502cbbe4046e51ce121a3bc52ebe413.setView(e.geocode.center, zoom);
             }).addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
 
-        
-    
+
+
             map_e502cbbe4046e51ce121a3bc52ebe413.fitBounds(
                 [[35.78662688467009, -86.07513427734375], [35.78662688467009, -86.07513427734375]],
                 {"maxZoom": 8}
             );
-        
-    
+
+
             var macro_element_cfc5fc9de6fd7ec2e827890f24ef5cc2 = L.tileLayer.wms(
                 "https://tnmap.giza.cloud/login/path/lotus-neptune-money-fire/wms",
                 {"attribution": "", "format": "image/png", "layers": "vexcel_2023", "styles": "", "transparent": true, "version": "1.1.1"}
             );
-        
-    
+
+
             macro_element_cfc5fc9de6fd7ec2e827890f24ef5cc2.addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
-        
-    
+
+
             var layer_control_a1c783d2ff316dba0927e16c840f4a4b_layers = {
                 base_layers : {
                     "openstreetmap" : tile_layer_18bc9c722d73ede14a68b49450e95c8d,
@@ -184,12 +184,12 @@
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
             ).addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
 
-        
-    
+
+
             tile_layer_18bc9c722d73ede14a68b49450e95c8d.addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
-        
-    
+
+
             macro_element_cfc5fc9de6fd7ec2e827890f24ef5cc2.addTo(map_e502cbbe4046e51ce121a3bc52ebe413);
-        
+
 </script>
 </html>
