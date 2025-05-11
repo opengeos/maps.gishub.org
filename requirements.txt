@@ -1,4 +1,3 @@
-fiona
 geopandas
 git+https://github.com/opengeos/leafmap.git
 jupyterlab

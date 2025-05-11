@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 3}, "calls": []};
+    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 3}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addLayer", [{"id": "OpenTopoMap", "type": "raster", "source": {"attribution": "Map data: (C) OpenStreetMap contributors, SRTM | Map style: (C) OpenTopoMap (CC-BY-SA)", "maxzoom": 17, "minzoom": 0, "tileSize": 256, "tiles": ["https://a.tile.opentopomap.org/{z}/{x}/{y}.png"], "type": "raster"}}, null]], ["setLayoutProperty", ["OpenTopoMap", "visibility", "visible"]], ["setPaintProperty", ["OpenTopoMap", "raster-opacity", 1.0]], ["setPaintProperty", ["OpenTopoMap", "raster-opacity", 1.0]], ["setLayoutProperty", ["OpenTopoMap", "visibility", "visible"]]]};
     pymaplibregl(data);
 })();
 </script>

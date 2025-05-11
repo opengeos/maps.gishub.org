@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-115.0, 25.0], "pitch": 0, "style": "https://api.maptiler.com/maps/satellite/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 4}, "calls": []};
+    var data = {"mapOptions": {"bearing": 0, "center": [-115.0, 25.0], "pitch": 0, "style": "https://api.maptiler.com/maps/satellite/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 4}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["video_source", {"type": "video", "urls": ["https://data.opengeos.org/patricia_nasa.mp4", "https://data.opengeos.org/patricia_nasa.webm"], "coordinates": [[-130, 32], [-100, 32], [-100, 13], [-130, 13]]}]], ["addLayer", [{"id": "video", "type": "raster", "source": "video_source"}, null]], ["setLayoutProperty", ["video", "visibility", "visible"]], ["setPaintProperty", ["video", "raster-opacity", 1.0]], ["addControl", ["LayerSwitcherControl", {"layerIds": ["video"], "theme": "default", "cssText": "padding: 5px; border: 1px solid darkgrey; border-radius: 4px;"}, "top-left"]]]};
     pymaplibregl(data);
 })();
 </script>

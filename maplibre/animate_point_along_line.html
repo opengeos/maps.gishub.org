@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 0.0], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 2}, "calls": []};
+    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 0.0], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 2}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["point", {"type": "geojson", "data": {"type": "Point", "coordinates": [20.0, 0.0]}}]], ["addLayer", [{"id": "point", "type": "circle", "paint": {"circle-radius": 10, "circle-color": "#007cbf"}, "source": "point"}, null]], ["setLayoutProperty", ["point", "visibility", "visible"]], ["setPaintProperty", ["point", "circle-opacity", 1.0]]]};
     pymaplibregl(data);
 })();
 </script>

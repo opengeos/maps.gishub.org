@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 60, "style": "https://api.maptiler.com/maps/basic/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 3}, "calls": []};
+    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 60, "style": "https://api.maptiler.com/maps/basic/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 3}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["counties", {"type": "geojson", "data": "https://opengeos.org/data/us/us_counties.geojson"}]], ["addLayer", [{"id": "us-counties", "type": "fill-extrusion", "paint": {"fill-extrusion-color": ["interpolate", ["linear"], ["get", "CENSUSAREA"], 400, "#fff5eb", 600, "#fee6ce", 800, "#fdd0a2", 1000, "#fdae6b"], "fill-extrusion-opacity": 1, "fill-extrusion-height": ["*", ["get", "CENSUSAREA"], 50]}, "source": "counties"}, "label_airport"]], ["setLayoutProperty", ["us-counties", "visibility", "visible"]], ["setPaintProperty", ["us-counties", "fill-extrusion-opacity", 1.0]], ["addControl", ["LayerSwitcherControl", {"layerIds": ["us-counties"], "theme": "default", "cssText": "padding: 5px; border: 1px solid darkgrey; border-radius: 4px;"}, "top-left"]]]};
     pymaplibregl(data);
 })();
 </script>
