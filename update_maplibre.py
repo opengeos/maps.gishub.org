@@ -2,6 +2,8 @@ import os
 import shutil
 import leafmap.maplibregl as leafmap
 
+os.environ["USE_MESSAGE_QUEUE"] = True
+
 url = "https://github.com/giswqs/leafmap/archive/refs/heads/master.zip"
 out_zip = "leafmap-master.zip"
 leafmap.download_file(url, out_zip)
