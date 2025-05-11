@@ -11,6 +11,7 @@ jobs:
     env:
       MAPTILER_KEY: ${{ secrets.MAPTILER_KEY }}
       MAPTILER_KEY_PUBLIC: ${{ secrets.MAPTILER_KEY_PUBLIC }}
+      USE_MESSAGE_QUEUE: ${{ secrets.USE_MESSAGE_QUEUE }}
 
     steps:
       - name: checkout repo content
