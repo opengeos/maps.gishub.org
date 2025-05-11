@@ -9,7 +9,18 @@ leafmap.download_file(url, out_zip)
 in_dir = "leafmap-master/docs/maplibre"
 out_dir = "maplibre"
 
-leafmap.execute_maplibre_notebook_dir(in_dir, out_dir, replace_api_key=True)
+ignore_files = [
+    "3d_pmtiles.ipynb",
+    "animate_a_line.ipynb",
+    "fields_of_the_world.ipynb",
+    "mapillary.ipynb",
+    "live_update_feature.ipynb",
+]
+
+
+leafmap.execute_maplibre_notebook_dir(
+    in_dir, out_dir, replace_api_key=True, ignore_files=ignore_files
+)
 
 shutil.rmtree("leafmap-master")
 os.remove("leafmap-master.zip")
