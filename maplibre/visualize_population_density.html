@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [30.0222, -1.9596], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 7}, "calls": []};
+    var data = {"mapOptions": {"bearing": 0, "center": [30.0222, -1.9596], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 7}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addSource", ["rwanda-provinces", {"type": "geojson", "data": "https://maplibre.org/maplibre-gl-js/docs/assets/rwanda-provinces.geojson"}]], ["addLayer", [{"id": "rwanda-provinces", "type": "fill", "layout": {}, "paint": {"fill-color": ["let", "density", ["/", ["get", "population"], ["get", "sq-km"]], ["interpolate", ["linear"], ["zoom"], 8, ["interpolate", ["linear"], ["var", "density"], 274, ["to-color", "#edf8e9"], 1551, ["to-color", "#006d2c"]], 10, ["interpolate", ["linear"], ["var", "density"], 274, ["to-color", "#eff3ff"], 1551, ["to-color", "#08519c"]]]], "fill-opacity": 0.7}, "source": "rwanda-provinces"}, null]], ["setLayoutProperty", ["rwanda-provinces", "visibility", "visible"]], ["setPaintProperty", ["rwanda-provinces", "fill-opacity", 1.0]]]};
     pymaplibregl(data);
 })();
 </script>

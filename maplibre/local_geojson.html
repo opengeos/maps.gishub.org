@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 3}, "calls": []};
+    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 3}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]]]};
     pymaplibregl(data);
 })();
 </script>

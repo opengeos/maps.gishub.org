@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 20.0], "pitch": 0, "style": "https://tiles.openfreemap.org/styles/bright", "zoom": 1}, "calls": []};
+    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 20.0], "pitch": 0, "style": "https://tiles.openfreemap.org/styles/bright", "zoom": 1}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]]]};
     pymaplibregl(data);
 })();
 </script>
