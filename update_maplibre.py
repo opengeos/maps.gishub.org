@@ -29,7 +29,7 @@ in_dir = "demos"
 out_dir = "demos-html"
 shutil.copytree(in_dir, out_dir)
 leafmap.execute_maplibre_notebook_dir(
-    in_dir, out_dir, keep_notebook=True, replace_api_key=True
+    in_dir, out_dir, keep_notebook=True, replace_api_key=True, ignore_files=ignore_files
 )
 
 html_files = leafmap.find_files(out_dir, "*.html")
