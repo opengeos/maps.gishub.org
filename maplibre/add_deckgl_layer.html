@@ -773,7 +773,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-122.4, 37.74], "pitch": 40, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 12}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addDeckOverlay", [[{"@@type": "GridLayer", "id": "GridLayer", "data": "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/sf-bike-parking.json", "extruded": true, "getPosition": "@@=COORDINATES", "getColorWeight": "@@=SPACES", "getElevationWeight": "@@=SPACES", "elevationScale": 4, "cellSize": 200, "pickable": true}], "Number of points: {{ count }}"]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [-122.4, 37.74], "pitch": 40, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 12}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addDeckOverlay", [[{"@@type": "GridLayer", "id": "GridLayer", "data": "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/sf-bike-parking.json", "extruded": true, "getPosition": "@@=COORDINATES", "getColorWeight": "@@=SPACES", "getElevationWeight": "@@=SPACES", "elevationScale": 4, "cellSize": 200, "pickable": true}], "Number of points: {{ count }}"]]]};
     pymaplibregl(data);
 })();
 </script>
