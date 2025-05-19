@@ -772,7 +772,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 3}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addMapboxDraw", [{}, "top-left", null]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 3}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addMapboxDraw", [{}, "top-left", null]]]};
     pymaplibregl(data);
 })();
 </script>

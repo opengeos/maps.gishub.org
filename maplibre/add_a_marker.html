@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [12.550343, 55.665957], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 8}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addMarker", [{"lngLat": [12.550343, 55.665957], "popup": {}, "options": {}}]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [12.550343, 55.665957], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 8}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addMarker", [{"lngLat": [12.550343, 55.665957], "popup": {}, "options": {}}]]]};
     pymaplibregl(data);
 })();
 </script>

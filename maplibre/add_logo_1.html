@@ -770,7 +770,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 3}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["InfoBoxControl", {"content": "<img src=\"https://i.imgur.com/LmTETPX.png\">", "cssText": "font-size: 20px; color: black;\n        font-weight: normal; padding: 5px;\n        background-color: transparent; border-radius: 5px; box-shadow: none;"}, "bottom-right"]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [-100.0, 40.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", "zoom": 3}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addControl", ["InfoBoxControl", {"content": "<img src=\"https://i.imgur.com/LmTETPX.png\">", "cssText": "font-size: 20px; color: black;\n        font-weight: normal; padding: 5px;\n        background-color: transparent; border-radius: 5px; box-shadow: none;"}, "bottom-right"]]]};
     pymaplibregl(data);
 })();
 </script>
