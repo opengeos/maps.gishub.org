@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>time slider</title>
+<title>stac</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!--
 <script src="https://unpkg.com/maplibre-gl@5.3.0/dist/maplibre-gl.js"></script>
@@ -771,7 +771,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 20.0], "pitch": 0, "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "zoom": 1}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["setProjection", [{"type": ["interpolate", ["linear"], ["zoom"], 10, "vertical-perspective", 12, "mercator"]}]], ["addSource", ["source", {"attribution": "", "tileSize": 256, "tiles": ["http://127.0.0.1/api/tiles/{z}/{x}/{y}.png?&filename=%2Fvsimem%2Ffc8059a2-4dae-4e36-9b85-3f1108769e99%2Ffc8059a2-4dae-4e36-9b85-3f1108769e99.tif"], "type": "raster"}]], ["addLayer", [{"id": "Image", "type": "raster", "source": "source"}, null]], ["setLayoutProperty", ["Image", "visibility", "visible"]], ["setPaintProperty", ["Image", "raster-opacity", 1.0]], ["setLayoutProperty", ["Image", "visibility", "visible"]], ["setPaintProperty", ["Image", "raster-opacity", 1.0]], ["fitBounds", [[[-120.756751, 36.636644], [-117.317461, 38.639052]], {"animate": true}]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 20.0], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 1}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addSource", ["source", {"attribution": "", "tileSize": 256, "tiles": ["https://planetarycomputer.microsoft.com/api/data/v1/item/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?nodata=0&collection=landsat-8-c2-l2&item=LC08_L2SP_047027_20201204_02_T1&assets=SR_B5&assets=SR_B4&assets=SR_B3&rescale=7144.0%2C22265.0"], "type": "raster"}]], ["addLayer", [{"id": "Color infrared", "type": "raster", "source": "source"}, null]], ["setLayoutProperty", ["Color infrared", "visibility", "visible"]], ["setPaintProperty", ["Color infrared", "raster-opacity", 1.0]], ["setLayoutProperty", ["Color infrared", "visibility", "visible"]], ["setPaintProperty", ["Color infrared", "raster-opacity", 1.0]], ["fitBounds", [[[-124.98085491310867, 46.35352512466258], [-121.78788697796408, 48.51466487533742]], {"animate": true}]]]};
     pymaplibregl(data);
 })();
 </script>
