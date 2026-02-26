@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>duckdb layer</title>
+<title>cloud optimized geotiff</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!--
 <script src="https://unpkg.com/maplibre-gl@5.3.0/dist/maplibre-gl.js"></script>
@@ -771,7 +771,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [-73.9031255, 40.7127753], "pitch": 0, "style": "https://tiles.openfreemap.org/styles/liberty", "zoom": 9}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addSource", ["source", {"type": "vector", "tiles": ["http://127.0.0.1/tiles/{z}/{x}/{y}.pbf"]}]], ["addLayer", [{"id": "duckdb_layer_laa", "type": "fill", "maxzoom": 22, "minzoom": 0, "paint": {"fill-color": "#ff0000"}, "source": {"type": "vector", "tiles": ["http://127.0.0.1/tiles/{z}/{x}/{y}.pbf"]}, "source-layer": "layer"}, null]], ["setLayoutProperty", ["duckdb_layer_laa", "visibility", "visible"]], ["setPaintProperty", ["duckdb_layer_laa", "fill-opacity", 0.5]], ["addPopup", ["duckdb_layer_laa", null, null]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 20.0], "pitch": 0, "style": "https://api.maptiler.com/maps/satellite/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 1}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addSource", ["source", {"attribution": "", "tileSize": 256, "tiles": ["https://giswqs-titiler-endpoint.hf.space/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?nodata=0&colormap_name=terrain&url=https%3A%2F%2Fgithub.com%2Fopengeos%2Fdatasets%2Freleases%2Fdownload%2Fraster%2Fsrtm90.tif&bidx=1&rescale=45.0%2C3427.0&tilesize=512"], "type": "raster"}]], ["addLayer", [{"id": "DEM", "type": "raster", "source": "source"}, null]], ["setLayoutProperty", ["DEM", "visibility", "visible"]], ["setPaintProperty", ["DEM", "raster-opacity", 1.0]], ["setLayoutProperty", ["DEM", "visibility", "visible"]], ["setPaintProperty", ["DEM", "raster-opacity", 1.0]], ["fitBounds", [[[-120.75592734926073, 36.63401097629554], [-117.30451019614512, 38.6269234341147]], {"animate": true}]]]};
     pymaplibregl(data);
 })();
 </script>
