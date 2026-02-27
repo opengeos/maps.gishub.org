@@ -771,7 +771,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [9.49, 49.01], "pitch": 0, "style": "https://api.maptiler.com/maps/basic/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 4}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["setLayoutProperty", ["label_country", "text-field", ["format", ["get", "name_en"], {"font-scale": 1.2}, "\n", {}, ["get", "name"], {"font-scale": 0.8, "text-font": ["literal", ["DIN Offc Pro Italic", "Arial Unicode MS Regular"]]}]]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [9.49, 49.01], "pitch": 0, "style": "https://tiles.openfreemap.org/styles/liberty", "zoom": 4}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["setLayoutProperty", ["label_country", "text-field", ["format", ["get", "name_en"], {"font-scale": 1.2}, "\n", {}, ["get", "name"], {"font-scale": 0.8, "text-font": ["literal", ["DIN Offc Pro Italic", "Arial Unicode MS Regular"]]}]]]]};
     pymaplibregl(data);
 })();
 </script>
