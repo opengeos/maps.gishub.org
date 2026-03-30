@@ -771,7 +771,7 @@ mustache/mustache.mjs:
 
 // ...
 (() => {
-    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 0.0], "pitch": 0, "style": "https://tiles.openfreemap.org/styles/liberty", "zoom": 2}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addMarker", [{"lngLat": [0, 0], "popup": {}, "options": {"draggable": true}}]]]};
+    var data = {"mapOptions": {"bearing": 0, "center": [0.0, 0.0], "pitch": 0, "style": "https://api.maptiler.com/maps/streets/style.json?key=zHkOvEKXRU94s1PSxs7w", "zoom": 2}, "calls": [["addControl", ["NavigationControl", {"showCompass": true, "showZoom": true, "visualizePitch": false}, "top-right"]], ["addControl", ["FullscreenControl", {}, "top-right"]], ["addControl", ["ScaleControl", {"unit": "metric"}, "bottom-left"]], ["addControl", ["GlobeControl", {}, "top-right"]], ["addMarker", [{"lngLat": [0, 0], "popup": {}, "options": {"draggable": true}}]]]};
     pymaplibregl(data);
 })();
 </script>
